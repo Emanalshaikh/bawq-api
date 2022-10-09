@@ -1,2 +1,8 @@
 // run
-DEBUG=bawq-api:* npm start
+
+### Run 
+
+`DEBUG=bawq-api:* npm start`
+
+#### Test 
+
