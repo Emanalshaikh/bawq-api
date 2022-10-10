@@ -22,9 +22,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// catch 404 and forward to error handler
+// improve your code to respond with response 404
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.status(404).json({
+    'msg': "route not found.",
+    'status': 404
+  });
 });
 
 // error handler
